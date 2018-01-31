@@ -4,7 +4,7 @@
  * @return {array}
  */
 
-const createObject = (arr)=>{
+const solution = (arr)=>{
   return 0;
 }
 
