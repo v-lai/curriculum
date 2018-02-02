@@ -5,8 +5,11 @@
  * @returns {boolean}
  */
 
-const solution = (a) => {
-  return 0;
+const solution = (a, i=2, sqrt=Math.sqrt(a)) => {
+  if (a < 2) return false;
+  if (sqrt <= i) return true;
+  if (a % i === 0) return false;
+  return solution(a, i+1);
 };
 
 module.exports = {
