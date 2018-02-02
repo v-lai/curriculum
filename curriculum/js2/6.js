@@ -4,9 +4,19 @@
  * @returns {array}
  */
 
-const solution = (a) => {
-  return [];
+// recursive
+const solution = (a, i=0, res=[]) => {
+  if (a.length === i) return res;
+  if (a[i] > 5) res.push(a[i]);
+  return solution(a, i+1, res);
 };
+
+// array method
+// const solution = (a) => {
+//   return a.filter((e) => {
+//     return e > 5;
+//   });
+// };
 
 module.exports = {
   solution,
