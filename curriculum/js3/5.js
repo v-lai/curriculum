@@ -5,9 +5,10 @@
  * @return {nothing}
  **/
 
-const solution = (a,b)=>{
-  return;
-}
+const solution = (a, b) => {
+  return Object.entries(a).map(([key, val]) => b(key, val));
+};
+
 module.exports = {
-  solution
-}
+  solution,
+};
